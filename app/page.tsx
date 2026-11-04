@@ -1,10 +1,37 @@
-import Image from "next/image";
+import Hero from "./components/hero"
+import Card from "./components/card"
+import Bouton from "./components/bouton"
+import { PROJETS } from "./Data/projet"
 
 export default function Home() {
+  const projetsVedette = PROJETS.filter((p) => p.misEnAvant).slice(0,3)
+
   return (
-    <main className="mx-auto max-w-3xl px-6 py-16">
-      <h1 className="text-4xl text-red-500 font-bold">Mon portfolio</h1>
-      <p className="text-3xl text-red-500">Etudiant en dvlpmnt web</p>
+    <main className="py-8">
+      <Hero
+        titre="Evaëlle Pluvinage-Nierengarten"
+        texte="Étudiante en développement web."
+      />
+
+      <section className="py-8">
+        <h2 className="text-2xl font-semibold">Mes projets</h2>
+        <ul className="mt-6 grid gap-6 md:grid-cols-3">
+          {projetsVedette.map((projet) => (
+            <li key={projet.id}>
+              <Card
+                slug={projet.slug}
+                title={projet.titre}
+                category={projet.categorie}
+                resume={projet.resume}
+                etat="vedette"
+              />
+            </li>
+          ))}
+        </ul>
+        <div className="mt-8">
+          <Bouton label="Voir tous les projets" href="/projets" variante="contour" />
+        </div>
+      </section>
     </main>
-  );
+  )
 }
