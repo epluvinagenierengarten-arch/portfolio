@@ -15,7 +15,7 @@ export const PROJETS: Projet[] = [
     slug: "spacetogone",
     titre: "Spacetogone",
     resume: "Jeu de plateau",
-    description: "Creation d'un site internet pour la promotion d'un jeu de plateau créé en équipe lors de l'epic digital day, a remporte le prix du meilleur site",
+    description: "Creation d'un site internet pour la promotion d'un jeu de plateau créé en équipe lors de l'epic digital day, a remporte le prix du meilleur site lors de l'évènement",
     categorie: "Site",
     misEnAvant: true,
     image: "/projets/spacetogone.png"

@@ -16,7 +16,7 @@ export default async function PageProjet({ params }: Props) {
 
   return (
     <article className="py-12">
-      <h1 className="mt-2 text-4xl font-semibold">{projet.titre}</h1>
+      <h1 className="mt-2 text-4xl font-semibold text-white">{projet.titre}</h1>
       <div className="relative mt-8 aspect-[16/9] w-full overflow-hidden">
         <Image
           src={projet.image}

@@ -14,7 +14,7 @@ export default function Card({ slug, title, category, resume, etat="classique" }
         <article className="h-full rounded-lg border p-5 border-neutral-200">
             {etat === "vedette" && <p className="text-neutral-300">En vedette</p>}
             <p className="text-xs uppercase text-neutral-500">{category}</p>
-            <h3 className="mt-1 font-semibold text-white text-foreground">
+            <h3 className="mt-1 font-semibold text-white">
                 <Link href={`/projets/${slug}`}>{title}</Link>
             </h3>
             <p className="mt-2 text-sm text-neutral-600">{resume}</p>
