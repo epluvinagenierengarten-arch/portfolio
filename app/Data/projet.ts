@@ -50,4 +50,14 @@ export const PROJETS: Projet[] = [
     misEnAvant: false,
     image: "/projets/eastcape.png"
   },
+  {
+    id: 5,
+    slug: "dewey",
+    titre: "Dewey",
+    resume: "Le potit robot",
+    description: "Construction d'un petit robot, en ft. avec Terry",
+    categorie: "Robot",
+    misEnAvant: false,
+    image: "/projets/dewey.png"
+  },
 ]

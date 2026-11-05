@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Presentation from "../components/presentation";
 import Pastille from "../components/pastilleTechniques";
+import Accordeon from "../components/accordeon";
 
 export default function Projets() {
   return (
@@ -11,11 +12,23 @@ export default function Projets() {
         texte="Je m'appelle Evaëlle Pluvinage-Nierengarten et j'ai 19ans. Je suis actuellement en deuxieme année de bachelor en developpement web et innovation à l'IIM school of technologies. Voici ce qu'il faut savoir à propos de moi "
         />
       </div>
-      <div className="text-white bold">
+      <div className="text-white font-bold">
         <h2>Mes compétences techniques: </h2>
         <div className="mt-6">
           <Pastille/>
         </div>
+      </div>
+      <div className="mt-10 text-white">
+        <Accordeon question="Langues parlées">
+            <li>Français : langue maternelle</li>
+            <li>Anglais : courrant</li>
+            <li>Allemand : intermediaire</li>
+            <li>Russe : Debutant</li>
+        </Accordeon>
+        <Accordeon question="Divers">
+          <li> Formation PSC1</li>
+          <li> Permis B</li>
+        </Accordeon>
       </div>
     </main>
   );
