@@ -12,6 +12,7 @@ export default function Projets() {
               <Card
                 slug={projet.slug}
                 title={projet.titre}
+                annee={projet.annee}
                 category={projet.categorie}
                 resume={projet.resume}
                 etat={projet.misEnAvant ? "vedette" : "classique"}
