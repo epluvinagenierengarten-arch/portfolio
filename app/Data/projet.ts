@@ -66,4 +66,15 @@ export const PROJETS: Projet[] = [
     misEnAvant: false,
     image: "/projets/dewey.png"
   },
+  {
+    id: 6,
+    slug: "pokedex",
+    titre: "pokedex",
+    annee: 2026,
+    resume: "Pokedex de la premiere generation",
+    description: "Creation d'un pokedex de la premiere generation, qui tri les pokemon en fonction de leur type et de leru place dans le pokedex",
+    categorie: "Site",
+    misEnAvant: false,
+    image: "/projets/pokedex.png"
+  }
 ]
